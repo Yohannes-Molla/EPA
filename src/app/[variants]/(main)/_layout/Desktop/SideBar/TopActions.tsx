@@ -1,5 +1,5 @@
 import { ActionIcon } from '@lobehub/ui';
-import { Compass, FolderClosed, MessageSquare } from 'lucide-react';
+import { Compass, FolderClosed, Lightbulb, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -59,6 +59,15 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
           />
         </Link>
       )}
+      <Link aria-label={'Practice'} href={'/practice'}>
+        <ActionIcon
+          active={tab === SidebarTabKey.Practice}
+          icon={Lightbulb}
+          placement={'right'}
+          size="large"
+          title={'Practice'}
+        />
+      </Link>
     </>
   );
 });

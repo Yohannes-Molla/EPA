@@ -22,6 +22,7 @@ export const config = {
     // include the /
     '/',
     '/discover',
+    '/practice',
     '/discover(.*)',
     '/chat',
     '/chat(.*)',
